@@ -1,175 +1,481 @@
 <script>
-function goGit(){
-  window.open('https://github.com/KIMSG', '_blank');
-}
-function goLinkedin(){
-  window.open('https://www.linkedin.com/in/%EC%8A%AC%EA%B8%B0-%EA%B9%80-1b7031122', '_blank');
-}
+    function goGit() {
+        window.open('https://github.com/KIMSG', '_blank');
+    }
+
+    function goLinkedin() {
+        window.open('https://www.linkedin.com/in/%EC%8A%AC%EA%B8%B0-%EA%B9%80-1b7031122', '_blank');
+    }
+    $("#down_ICT").slideUp();
+    $("#down_GANGDONG").slideUp();
+    $("#down_CULTURE").slideUp();
+    $("#down_HUNGRY").slideUp();
+    $("#down_IDEAALL").slideUp();
+    $("#down_EATSLLIM").slideUp();
+    $("#down_LOW").slideUp();
+    $("#down_KIAPS").slideUp();
+
+    $(document).ready(function() {
+          $("#menuBtn_ICT").click(function(){
+             if(  $(this).hasClass("on") ){
+               $(this).toggleClass("on");
+               $("#down_ICT").slideUp();
+             }else {
+               $("#down_ICT").slideDown();
+               $(this).toggleClass("on");
+             }
+         });
+
+         $("#menuBtn_GANGDONG").click(function(){
+             if(  $(this).hasClass("on") ){
+               $(this).toggleClass("on");
+               $("#down_GANGDONG").slideUp();
+             }else {
+               $("#down_GANGDONG").slideDown();
+               $(this).toggleClass("on");
+             }
+         });
+
+         $("#menuBtn_CULTURE").click(function(){
+             if(  $(this).hasClass("on") ){
+               $(this).toggleClass("on");
+               $("#down_CULTURE").slideUp();
+             }else {
+               $("#down_CULTURE").slideDown();
+               $(this).toggleClass("on");
+             }
+         });
+
+         $("#menuBtn_HUNGRY").click(function(){
+             if(  $(this).hasClass("on") ){
+               $(this).toggleClass("on");
+               $("#down_HUNGRY").slideUp();
+             }else {
+               $("#down_HUNGRY").slideDown();
+               $(this).toggleClass("on");
+             }
+         });
+
+         $("#menuBtn_IDEAALL").click(function(){
+             if(  $(this).hasClass("on") ){
+               $(this).toggleClass("on");
+               $("#down_IDEAALL").slideUp();
+             }else {
+               $("#down_IDEAALL").slideDown();
+               $(this).toggleClass("on");
+             }
+         });
+
+          $("#menuBtn_EATSLLIM").click(function(){
+              if(  $(this).hasClass("on") ){
+                $(this).toggleClass("on");
+                $("#down_EATSLLIM").slideUp();
+              }else {
+                $("#down_EATSLLIM").slideDown();
+                $(this).toggleClass("on");
+              }
+          });
+
+          $("#menuBtn_LOW").click(function(){
+              if(  $(this).hasClass("on") ){
+                $(this).toggleClass("on");
+                $("#down_LOW").slideUp();
+              }else {
+                $("#down_LOW").slideDown();
+                $(this).toggleClass("on");
+              }
+          });
+
+          $("#menuBtn_KIAPS").click(function(){
+              if(  $(this).hasClass("on") ){
+                $(this).toggleClass("on");
+                $("#down_KIAPS").slideUp();
+              }else {
+                $("#down_KIAPS").slideDown();
+                $(this).toggleClass("on");
+              }
+          });
+    });
+
 </script>
- <br>
-  <div class="w3-row-padding w3-container">
-      <div class="w3-col w3-twothird">
+<br>
+<div class="w3-row-padding w3-container">
+    <div class="w3-col w3-twothird">
         <i class="material-icons" style="font-size:24px">assignment_ind</i> <span class="highlight nanum">소개</span><br><br>
         <span class="nanum">
-          현재 SI업체에서 공공사업 시스템 구축 및, 유지보수, 운영을 담당하고 있습니다. IDE는 이클립스와 IntelliJ IDEA를 사용하며, 전자정부프레임워크와 Spring기반의 프로젝트를 주로 진행하고 있습니다. 주요 기술은 Java와 SQL, JavaScript, jQuery 등 입니다. 최근 관심 분야는 Angular와 firebase등과 같은 새로운 서비스이며, 이를 활용한 개인 프로젝트를 진행하고 있습니다.
+          현재 SI업체에서 공공사업 시스템 구축 및, 유지보수, 운영을 담당하고 있습니다. IDE는 이클립스와 IntelliJ IDEA를 사용하며,
+          전자정부프레임워크와 Spring기반의 프로젝트를 주로 진행하고 있습니다. 주요 기술은 Java와 SQL, JavaScript, jQuery 등 입니다.
+          최근 관심 분야는 Angular와 firebase등과 같은 새로운 서비스이며, 이를 활용한 개인 프로젝트를 진행하고 있습니다.
         </span>
-      </div><!--//w3-col s6-->
-      <div class="w3-col w3-third">
-        <img class="w3-round  w3-animate-top" src="https://avatars0.githubusercontent.com/u/10217983?v=3&u=c195ec032417136a969975454660d2f40a6e84ae&s=400" style="width:50%;">
+    </div>
+    <!--//w3-col s6-->
+    <div class="w3-col w3-third">
+        <!-- <img class="w3-round  w3-animate-top" src="https://avatars0.githubusercontent.com/u/10217983?v=3&u=c195ec032417136a969975454660d2f40a6e84ae&s=400" style="width:50%;"> -->
         <h5 class="w3-opacity">Software Engineer</h5>
-        <a class="w3-btn w3-light-grey" onclick="goGit();" >GitHub <i class="fa fa-github" style="font-size:24px"></i></a>
-        <a class="w3-btn w3-light-grey" onclick="goLinkedin();" >linkedin <i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
-      </div><!--//w3-col s6-->
-    </div><!--//w3-row-padding w3-container-->
-  <hr>
-  <p>
-     <i class="material-icons" style="font-size:24px">desktop_mac</i> <span class="highlight nanum">경력</span>
-    <p><b><font color="#4a7b8c">공공 SI 사업 Java 개발자</font></b></p>
-    <p>오케이토마토(주)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <font color="#4a7b8c"><span style="background-color: rgb(255, 255, 255);">(2016.09 ~ 현재)</span></font></p>
+        <a class="w3-btn w3-light-grey" onclick="goGit();">GitHub <i class="fa fa-github" style="font-size:24px"></i></a>
+        <a class="w3-btn w3-light-grey" onclick="goLinkedin();">linkedin <i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+    </div>
+    <!--//w3-col s6-->
+</div>
+<!--//w3-row-padding w3-container-->
+<hr>
+<p>
+    <i class="material-icons" style="font-size:24px">desktop_mac</i> <span class="highlight nanum">경력및 이력</span>
+    <p><b><font color="#4a7b8c">공공 SI 사업 Java 개발자 (웹프로그래머)</font></b></p>
+    <p>오케이토마토(주)
+        <font color="#4a7b8c"><span style="background-color: rgb(255, 255, 255);  margin-left:10%;">(2016.09 ~ 현재)</span></font>
+    </p>
     <ol>
-      <li>스마트 제휴푸드 (<span style="font-family: Helvetica; color: rgb(74, 123, 140); font-size: 14px; letter-spacing: -0.4px;">로컬푸드 사업자 간 협업과 교류를 모바일 어플리케이션으로 편리하고 신속하게 처리할 수 있도록 지원하여 지역경제 활성화에 기여하는 스마트워크 서비스</span><span style="font-family: Helvetica; color: rgb(74, 123, 140);">)</span></li>
-      <ul>
-        <li>회원 관리 로직 제작</li>
-        <li>메뉴 관리 및 게시판 관리 제작</li>
-        <li>관리자(CMS) 개발</li>
-        <li>
-          <br>
+        <li>스마트 제휴푸드 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 로컬푸드 사업자 간의 요구 품목 및 재고 등을 실시간으로 정보 교류 <br> - 로컬푸드 사업자들의 수요조사 및 정보교류를 통해 필요 농산물 적정 물량 수급 지원 <br> - 로컬푸드 직매장 활성화에 필요한 소비자 및 지역 정보 교류 <br> - 하이브리드 앱 개발</font>
+            </font>
         </li>
-      </ul>
-      <li>강동구청 평생학습 <font face="Helvetica"><font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">(지식정보 격차해소 및 지역공동체 발판 마련을 위한 강연 프로그램 등록 및 수강 신청, 자료 공유 서비스)</font></font>
-      </li>
-      <ul>
-        <li>관리자(CMS) 개발</li>
-        <li>사용자 컨텐츠 설계 및 제작</li>
-      </ul>
-      <li>무한상상<font face="Helvetica"><font color="#4a7b8c" style="background-color: rgb(255, 255, 255);"> (<span style="font-size: 14px; letter-spacing: -0.4px;">안정화 및 시스템 고도화</span>)</font></font>
-      </li>
-      <ul>
-        <li>관리자(CMS), 사용자, 운영기관 컨텐츠 유지보수</li>
-      </ul>
-      <li>
         <br>
-      </li>
-    </ol>
-    <div class="w3-container w3-blue">
-      <h3>목표!</h3>
-      <p>회사 근처 (신정, 목동역 근처의 다양한 밥집의 메유판을 서로 공유하자)</p>
-    </div>
-    <ul class="w3-ul w3-border">
-      <li><h2>기능</h2></li>
-      <li>밥집 리스트 열람</li>
-      <li>이번달 방문 리스트</li>
-      <li>밥집별 랭킹</li>
-      <li>밥집별 후기 작성</li>
-      <li>랜덤메뉴 선택</li>
-    </ul>
-  </p>
-  <p>
-    <div class="w3-panel w3-green">
-      <h3>개발 언어 / 사용 기술!</h3>
-    </div>
-    <div class="w3-row-padding w3-container">
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>Firebase</h3>
-          </header>
-          <div class="w3-container">
-            <p><span class="w3-text-blue">무료</span>로 시작, 손쉽게 확장</p>
-            <hr>
-            <p>무료 호스팅, 실시간 데이터베이스 사용<br>
-            별점, 후기 등의 데이터를 실시간으로 저장하고 반영하기 위해 사용</p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="goFirebase()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>d3.js & c3.js</h3>
-          </header>
-          <div class="w3-container">
-            <p>다양한 차트 제이쿼리</p>
-            <hr>
-            <p>
-              별점 합계를 차트로 보여주기 위해 사용<br>
-              다양한 차트를 제공함.<br>
-              적용이 쉬움
-            </p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="god3()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-    </div><!--//w3-row-padding w3-container-->
-    <br>
-    <div class="w3-row-padding w3-container">
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>jQeury</h3>
-          </header>
-          <div class="w3-container">
-            <p>다양한 선택기능 및 데이터 로드에 사용 / 파이어베이스로 처음 데이터를 읽어 처리 할 때 유용</p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="goJqeury()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>NoSQL</h3>
-          </header>
-          <div class="w3-container">
-            <p>고성능 비관계형 데이터베이스</p>
-            <hr>
-            <p>
-              빅데이터 처리에 많이 사용함<br>
-              페이스북, 아마존의 DB 방식<br>
-              오브젝트 형태로의 데이터처리 방식을 숙지
-            </p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="goNosql()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-    </div><!--//w3-row-padding w3-container-->
-    <br>
-    <div class="w3-row-padding w3-container">
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>BootStrap</h3>
-          </header>
-          <div class="w3-container">
-            <p>플러그인 지원, 반응형 지원</p>
-            <hr>
-            <p>
-              사진 레이어에 사용<br>
-              사진 슬라이더 사용<br>
-              후기작성의 기본 틀 사용
-            </p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="goBootStrap()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-      <div class="w3-col s6">
-        <div class="w3-card-4" style="width:100%">
-          <header class="w3-container w3-light-grey">
-            <h3>HTML, JavaScript, CSS...</h3>
-          </header>
-          <div class="w3-container">
-            <p>프론트엔드</p>
-            <hr>
-            <p>
-              기본 템플릿이 없이 구현함<br>
-            </p>
-          </div>
-          <button class="w3-btn-block w3-dark-grey" onclick="goNosql()">+ Connect</button>
-        </div><!--//w3-card-4-->
-      </div><!--//w3-col s6-->
-    </div><!--//w3-row-padding w3-container-->
-  </p>
+        <li>강동구청 평생학습 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 사용자 화면 디자인 전면 개편, 반응형웹 홈페이지<br>
+- 수강신청&결제 및 강의실 예약시스템 개발<br>
+- 전자정부표준프레임워크 적용 통합관리자시스템 구축<br>
+- 웹접근성, 웹호환성, 개인정보보호, 보안 등 홈페이지 관련 표준규정 준수<br></font>
+            </font>
+        </li>
+        <br>
+        <li>문화관광체육부 아시아문화중심도시 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 기존 홈페이지 전면 재구축을 통한 웹 접근성, 호환성 사이트 구축 및 사용자 편의 개선을 위한 UI 개선 등 고도화 작업 <br> - 홈페이지 전반에 관한 안정적인 운영 및 개선 업무 진행 <br> - 아시아문화중심도시 조성사업에 대한 이해를 돕고, 추진단 활동을 홍보하는 반응형 사이트로 리뉴얼 <br></font>
+            </font>
+        </li>
+        <br>
+        <li>무한상상 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 전국 58곳 무한상상실 홈페이지 안정화 및 시스템 고도화 <br> - 무한상상정보넷 홈페이지 운영을 위한 신규 디자인 및 이미지 변경 <br> - 무한상상실 장비 및 프로그램 신청 모듈 세분화 및 개선 <br> - 무한상상실 활성화를 위한 효율적인 고객 맞춤 기능 개선 <br></font>
+            </font>
+        </li>
+        <br>
+        <li>풀무원 잇슬림 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 홈페이지 리뉴얼 <br>
+                    - 메인, 서브영역 UX/UI 디자인 설계<br>
+                    - 캘린더 제어 기능 보강<br>
+                    - 제품소개 퀵뷰 기능<br>
+                    - 상품 카테고리 필터 기능<br>
+                  </font>
+            </font>
+        </li>
+    </ol><br><br>
 
-  <!--<p>
+    <p><b><font color="#4a7b8c">안드로이드 개발자</font></b></p>
+    <p>(주)텔레포트나인
+        <font color="#4a7b8c"><span style="background-color: rgb(255, 255, 255);  margin-left:10%;">(2015.12 ~ 2016.07)</span></font>
+    </p>
+    <ol>
+        <li>화면제어 서비스 (스타트업, 시제품)<br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 안드로이드 화면 설계<br> - 안드로이드 화면 개발<br> - 구글 API 연동, 사용자별 위치 연동<br> - 파이어베이스 엔진 사용<br> - 형상 관리 - GItLab 사용<br> - IDE - Android Studio <br> - 프레임워크 - MVC<br>
+                </font>
+            </font>
+        </li>
+            <br>
+    </ol><br><br>
+
+
+    <p><b><font color="#4a7b8c">Java full-stack 개발자</font></b></p>
+    <p>(주)비트교육센터
+        <font color="#4a7b8c"><span style="background-color: rgb(255, 255, 255);  margin-left:10%;">(2015.12 ~ 2016.07)</span></font>
+    </p>
+    <ol>
+        <li>재밌는 심리테스트</li><br>
+        <li>근육맨 키우기 게임</li><br>
+        <li>재밌는 심리테스트</li><br>
+        <li>미드스팟  (모임의 목적과 시간에 따른 가장 적합한 추천 장소와 이동 수단을 빅데이터를 분석하여 제공한다.)
+          <font face="Helvetica">
+              <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                  - 다음지도 API<br>
+                  - 주소 API<br>
+                  - 공공데이터 (대중교통 길찾기, 지하철, 버스 정보 사용)<br>
+                  - 부트스트랩<br>
+                  - requireJS<br>
+                  - handlebars<br>
+                  - nodeJS (자료 수집)<br>
+                  - MySQL<br>
+                  - IDE - Bracket, Eclipse <br>
+                  - Gradle <br>
+                  - MyBatis <br>
+              </font>
+          </font>
+        </li>
+    </ol><br><br>
+
+
+    <p><b><font color="#4a7b8c">리눅스(SW) OS 개발자</font></b></p>
+    <p>(주)윈스
+        <font color="#4a7b8c"><span style="background-color: rgb(255, 255, 255);  margin-left:10%;">(2013.07 ~ 2014.08)</span></font>
+    </p>
+    <ol>
+        <li>sniper IPS 100G<br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - OS 개발 <br> - QC / QA 검증 및 보조 <br> - 자동화 구축 (Bash shell 스크립트 사용) <br> - 버그리포트 작성 (버그질라) <br> - 리눅스 ( 페도라, CentOS ) 장비 고도화에 따른 트래픽처리 <br>
+                </font>
+            </font><br>
+            </li>
+            <li>연구소 국책과제 담당 <br>
+                <font face="Helvetica">
+                    <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                        - WC-300 / ETRI / KISA 등..<br></font>
+                </font>
+            </li>
+            <br>
+    </ol><br><br>
+
+    <p><b><font color="#4a7b8c">개인 프로젝트 현황</font></b></p>
+    <ol>
+        <br>
+        <li>배고프다 <br>
+            <font face="Helvetica">
+                <font color="#4a7b8c" style="background-color: rgb(255, 255, 255);">
+                    - 오늘 어디갈지 메뉴판 같은 거 찍어서 같이 공유 하면 좋겠다. 는 직원들을 위해 개발하였다. <br></font>
+            </font>
+        </li>
+    </ol><br><br>
+
+</p>
+<p>
+    <i class="fa fa-hand-peace-o" style="font-size:24px"></i> <span class="highlight nanum"> 기술 사용 내역</span>
+    <ol>
+        <div class="menuDrop" id="menuBtn_ICT">스마트 제휴푸드 <span class="subSince">(2016.10 ~ 2016.12)</span></div>
+        <!-- 기술 사용 내역 List -->
+        <ul class="w3-ul w3-border" id="down_ICT" style="border: 0px solid white !important;">
+            <li>회원 관리 로직 제작</li>
+            <li>메뉴 관리 및 게시판 관리 제작</li>
+            <li>관리자(CMS) 개발</li>
+            <li>스프링 4 개발</li>
+            <li>톰캣7, 자바7 개발</li>
+            <li>메이븐, MySQL, 마이바티스 사용</li>
+            <li>회원인증 및 임시 비밀번호 메일 보내기 SMTP 활용(지메일 , 네이버 사용)</li>
+            <li>회원가입 로직 설계</li>
+            <li>ajax, JSON 데이터로 중복ID 확인</li>
+            <li>이메일, 전화번호, 사업자등록 번호 등 정규식 사용</li>
+            <li>비밀 번호 암호화 저장 SHA-256 사용</li>
+            <li>세션을 활용한 회원 인증</li>
+            <li>계층형 게시판 개발</li>
+            <li>네이버 스마트 에디터 사용</li>
+            <li>행자부 주소API사용</li>
+            <li>스프링 파일 업로드 개발</li>
+            <li>거래결과 통계 개발</li>
+            <li>엑셀 다운로드</li>
+            <li>@PathVariable을 이용한 경로 변수 처리</li>
+            <li>svn을 이용한 형상관리</li>
+            <li>jsp 2.0 개발</li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_GANGDONG">강동구청 평생학습 <span class="subSince">(2017.03 ~ 2017.08)</span></div>
+
+        <ul class="w3-ul w3-border" id="down_GANGDONG" style="border: 0px solid white !important;">
+            <li><a href="http://lll.gangdong.go.kr/main/Main.do">바로가기</a></li>
+            <li>관리자(CMS) 개발</li>
+            <li>관리자(CMS) 정산 통계</li>
+            <li>교육 훈련 후 수료증 셀계 및 제작</li>
+            <li>사용자 컨텐츠 설계 및 제작</li>
+            <li>스프링 3.4 개발</li>
+            <li>톰캣7, 자바7 개발</li>
+            <li>오라클, 아이바티스 사용</li>
+            <li>summernote에디터 사용</li>
+            <li>구글 지도 API 연동 주소로 좌표 검색</li>
+            <li>행자부 주소API 연동 주소검색 개발</li>
+            <li>관리자 단계별 권한 주기 로직 개발</li>
+            <li>코드 관리 로직 개발</li>
+            <li>이벤트 및 팝업 관리 로직 개발</li>
+            <li>svn을 이용한 형상관리</li>
+            <li>메뉴 자동생성</li>
+            <li>강좌 및 프로그램 생성</li>
+            <li>강사 및 강의자 등록</li>
+            <li>강의목적별 조건에 동일한 사용자 매칭</li>
+            <li>PG 연동 (이니시스) 결제 및 결제 취소</li>
+            <li>SSO연동 및 DB보안 코딩</li>
+            <li>웹접근성 인증</li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_LOW">저출산고령사회위원회 <span class="subSince">(2017.08 ~ 2017.08)</span></div>
+        <ul class="w3-ul w3-border" id="down_LOW" style="border: 0px solid white !important;">
+          <li><a href="http://precap.go.kr/">바로가기</a></li>
+            <li>메뉴 추가 개발건</li>
+            <li>스프링 3, tiles 개발</li>
+            <li>톰캣7, 자바7 개발</li>
+            <li>큐브리드, 마이바티스 사용</li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_KIAPS">한국형수치예보모델 <span class="subSince">(2017.07 ~ 2017.07)</span></div>
+        <ul class="w3-ul w3-border" id="down_KIAPS" style="border: 0px solid white !important;">
+          <li><a href="https://www.kiaps.org/main.do">바로가기</a></li>
+            <li>논문 등록, 팝업 추가 개발건</li>
+            <li>스프링 3 개발</li>
+            <li>톰캣7, 자바7 개발</li>
+            <li>MySQL, 마이바티스 사용</li>
+            <li>국문, 영문 개발</li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_CULTURE">문화관광체육부 아시아문화중심도시 <span class="subSince">(2017.01 ~ 2017.03)</span></div>
+        <ul class="w3-ul w3-border" id="down_CULTURE" style="border: 0px solid white !important;">
+            <li>웹취약점 아이핀 인증 스크립트 오류 해결</li>
+            <li>tiles 개발</li>
+            <li>오라클 사용</li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_EATSLLIM">풀무원 잇슬림 <span class="subSince">(2017.03 ~ 2017.05)</span></div>
+        <ul class="w3-ul w3-border" id="down_EATSLLIM" style="border: 0px solid white !important;">
+            <li><a href="http://www.eatsslim.co.kr/index_es.jsp">바로가기</a></li>
+            <li>sns로그인 연동
+                <ul>
+                  <li class="cursor" onclick="window.open('https://github.com/KIMSG/alliwannado/wiki/SNS-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%ED%95%98%EA%B8%B0-Naver-(JSP,-Java)');">네이버</li>
+                  <li class="cursor" onclick="window.open('https://github.com/KIMSG/alliwannado/wiki/SNS-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%ED%95%98%EA%B8%B0-%EC%B9%B4%EC%B9%B4%EC%98%A4-(JSP,-javascript)');">카카오톡</li>
+                  <li class="cursor" onclick="window.open('https://github.com/KIMSG/alliwannado/wiki/SNS-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84-%ED%95%98%EA%B8%B0-%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%B6%81-(JSP,-javascript)');">페이스북</li>
+                </ul>
+            </li>
+        </ul><br>
+
+        <div class="menuDrop" id="menuBtn_HUNGRY">배고프다 <span class="subSince">(2016.12 ~ 2017.01)</span></div>
+        <ul class="w3-ul w3-border" id="down_HUNGRY" style="border: 0px solid white !important;">
+            <li>Node.js, HTML5, CSS3, JavaScript, jquery, 부트스트랩 개발</li>
+            <li>브라켓, 아톰 IDE 사용</li>
+            <li class="cursor" onclick="window.open('https://github.com/KIMSG/alliwannado/wiki/%ED%8C%8C%EC%9D%B4%EC%96%B4%EB%B2%A0%EC%9D%B4%EC%8A%A4-%ED%98%B8%EC%8A%A4%ED%8C%85-(Firebase-hosting)-(%EC%9C%88%EB%8F%84%EC%9A%B0-%EB%B2%84%EC%A0%84)');">firebase를 통한 호스팅</li>
+            <li class="cursor" onclick="window.open('');">firebase를 통한 database(NoSQL)사용</li>
+            <li>JSON의 형태로 후기 및 별점 등록</li>
+            <li>새로운 가게 등록</li>
+            <li>github를 통한 소스 형상관리</li>
+            <li>d3.js차트를 이용한 음식점 랭킹</li>
+        </ul><br>
+
+        <div  class="menuDrop" id="menuBtn_IDEAALL">무한상상 <span class="subSince">(2016.09 ~ 2017.02)</span></div>
+        <ul class="w3-ul w3-border" id="down_IDEAALL" style="border: 0px solid white !important;">
+            <li><a href="https://ideaall.net/main/Main.do?req_site_id=HOMEPAGE">바로가기</a></li>
+            <li>관리자(CMS), 사용자, 운영기관 컨텐츠 유지보수</li>
+            <li>스프링 3 개발</li>
+            <li>톰캣7, 자바6 개발</li>
+            <li>오라클, 아이바티스 사용</li>
+            <li>63개 운영기관 연동 고도화</li>
+        </ul><br>
+    </ol><br><br>
+</p>
+<p>
+    <i class="fa fa-drivers-license" style="font-size:24px"></i><span class="highlight nanum"> 자격증 / 공모전</span>
+    <ol>
+        <li>정보처리기사</li><br>
+        <li>창업동아리 (2011. 11 ~ 2014. 02)<br>
+            - 2013 벤처동아리 육성사업 (전라남도 창업지원단 / 목포대학교 창업지원단) <br>
+            - 2014 벤처동아리 육성사업<br>
+        </li><br>
+        <br>
+    </ol><br><br>
+
+</p>
+
+<p>
+    <i class="fa fa-bar-chart" style="font-size:24px"></i> <span class="highlight nanum">사용 기술</span>
+
+    <div class="w3-row-padding w3-container">
+      <!-- tech s -->
+      <div class="w3-col s2">HTML</div>
+      <div class="w3-col s10" style="height: 30px;">
+          <div class="bar-chart primary" data-total="87" animated>
+            <span class="bar-chart--inner" style="width:87%;"></span>
+          </div>
+      </div>
+      <div class="w3-col s2">CSS</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart secondary" data-total="79" animated>
+              <span class="bar-chart--inner" style="width:79%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">JavaScript</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart tertiary" data-total="82" animated>
+              <span class="bar-chart--inner" style="width:82%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">JQuery</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart primary" data-total="85" animated>
+              <span class="bar-chart--inner" style="width:85%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">JSP</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart secondary" data-total="80" animated>
+              <span class="bar-chart--inner" style="width:80%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">Java</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart tertiary" data-total="70" animated>
+              <span class="bar-chart--inner" style="width:70%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">Oracle</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart primary" data-total="60" animated>
+              <span class="bar-chart--inner" style="width:60%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">MsSQL</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart secondary" data-total="40" animated>
+              <span class="bar-chart--inner" style="width:40%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">MySQL</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart tertiary" data-total="70" animated>
+              <span class="bar-chart--inner" style="width:70%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">Linux</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart primary" data-total="40" animated>
+              <span class="bar-chart--inner" style="width:40%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">Bash Shell</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart secondary" data-total="70" animated>
+              <span class="bar-chart--inner" style="width:70%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">firebase</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart tertiary" data-total="45" animated>
+              <span class="bar-chart--inner" style="width:45%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">git</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart primary" data-total="50" animated>
+              <span class="bar-chart--inner" style="width:50%;"></span>
+            </div>
+      </div>
+      <div class="w3-col s2">svn</div>
+      <div class="w3-col s10" style="height: 30px;">
+            <div class="bar-chart secondary" data-total="70" animated>
+              <span class="bar-chart--inner" style="width:70%;"></span>
+            </div>
+      </div>
+
+    </div>
+
+</p>
+
+<br><br><br>
+
+<!-- chart -->
+<script src="js/chart.js" ></script>
+<!--<p>
     <div class="w3-container w3-yellow">
       <h3>개발 후기!</h3>
       <p>파이어베이스를 익혀보기 위한 프로젝트</p>

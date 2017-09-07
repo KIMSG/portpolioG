@@ -1,0 +1,43 @@
+.bar-chart {
+  background: #fff;
+  height: 4rem;
+  /*margin-bottom: 4rem;*/
+}
+.bar-chart .bar-chart--inner {
+  background: #333;
+  height: 30%;
+  display: block;
+  margin-bottom: .3rem;
+  position: relative;
+  will-change: width;
+}
+.bar-chart .bar-chart--inner:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  width: 1rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.bar-chart[animated] .bar-chart--inner {
+  -webkit-transition: width 1.3s;
+  transition: width 1.3s;
+}
+.bar-chart.primary .bar-chart--inner {
+  background: #e86951;
+}
+.bar-chart.secondary .bar-chart--inner {
+  background: #168de6;
+}
+.bar-chart.tertiary .bar-chart--inner {
+  background: #1dbdab;
+}
+
+/*html {
+  box-sizing: border-box;
+}*/
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

@@ -9,76 +9,86 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/chart.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- 파이어베이스 SDK-->
   <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- 나눔고딕 -->
   <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
-  <style>
-    html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif;}
-    .w3-sidenav a {padding:16px;}
-  </style>
+  <!-- w3 School -->
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <script>
-      $(document).ready(function() {
-          openPage("intro");
-      });
+  <script>
+  setTimeout(function() {
+  	$(".girl-head").addClass('girl-head-anim');
+  },3000)
 
-      WebFont.load({
-        custom: {
-            families: ['Nanum Gothic'],
-            urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+    $(document).ready(function() {
+        openPage("intro");
+
+    });
+
+        WebFont.load({
+            custom: {
+                families: ['Nanum Gothic'],
+                urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css']
+            }
+        });
+
+
+        function goBootStrap(){
+          window.open('http://bootstrapk.com/', '_blank');
         }
-      });
+        function goNosql(){
+          window.open('https://aws.amazon.com/ko/nosql/', '_blank');
+        }
+        function goJqeury(){
+          window.open('https://jquery.com/', '_blank');
+        }
+        function god3(){
+          window.open('https://d3js.org/', '_blank');
+        }
+        function goFirebase(){
+          window.open('https://firebase.google.com/?hl=ko', '_blank');
+        }
+        function goFood(){
+          window.open('http://food-63973.firebaseapp.com/', '_blank');
+        }
+        function goFoodGit(){
+          window.open('https://github.com/KIMSG/food', '_blank');
+        }
+        function goFacebook(){
+          window.open('http://www.facebook.com/kimseurgi ', '_blank');
+        }
 
-      function goBootStrap(){
-        window.open('http://bootstrapk.com/', '_blank');
-      }
-      function goNosql(){
-        window.open('https://aws.amazon.com/ko/nosql/', '_blank');
-      }
-      function goJqeury(){
-        window.open('https://jquery.com/', '_blank');
-      }
-      function god3(){
-        window.open('https://d3js.org/', '_blank');
-      }
-      function goFirebase(){
-        window.open('https://firebase.google.com/?hl=ko', '_blank');
-      }
-      function goFood(){
-        window.open('http://food-63973.firebaseapp.com/', '_blank');
-      }
-      function goFoodGit(){
-        window.open('https://github.com/KIMSG/food', '_blank');
-      }
-      function goFacebook(){
-        window.open('http://www.facebook.com/kimseurgi ', '_blank');
-      }
+        // var openInbox = document.getElementById("myBtn");
+        // openInbox.click();
 
-      var openInbox = document.getElementById("myBtn");
-      openInbox.click();
+        function w3_open() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
 
-      function w3_open() {
-          document.getElementById("mySidenav").style.display = "block";
-          document.getElementById("myOverlay").style.display = "block";
-      }
-      function w3_close() {
-          document.getElementById("mySidenav").style.display = "none";
-          document.getElementById("myOverlay").style.display = "none";
-      }
-
-      function myFunc(id) {
-          var x = document.getElementById(id);
-          if (x.className.indexOf("w3-show") == -1) {
-              x.className += " w3-show";
-              x.previousElementSibling.className += " w3-red";
-          } else {
-              x.className = x.className.replace(" w3-show", "");
-              x.previousElementSibling.className =
-              x.previousElementSibling.className.replace(" w3-red", "");
-          }
-      }
+        function myFunc(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+                x.previousElementSibling.className += " w3-red";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+                x.previousElementSibling.className =
+                x.previousElementSibling.className.replace(" w3-red", "");
+            }
+        }
 
 
       function openPage(contentName) {
@@ -86,62 +96,17 @@
         $('#ContentG').load(changeName);
       }
 
-      var openTab = document.getElementById("firstTab");
-      openTab.click();
+      // var openTab = document.getElementById("firstTab");
+      // openTab.click();
 
-      var openTab = document.getElementById("secondTab");
-      openTab.click();
+      // var openTab = document.getElementById("secondTab");
+      // openTab.click();
 
-    </script>
+  </script>
   <body>
 
-    <!-- Side Navigation -->
-    <nav class="w3-sidenav w3-collapse w3-white w3-animate-left w3-card-2" style="z-index:3;width:320px;" id="mySidenav">
-      <a href="javascript:goFacebook()" class="w3-border-bottom w3-large">
-        <img src="images/profile01.jpg" style="width:40%;"> 김슬기 / Kim Seulgi
-      </a>
-      <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu"
-      class="w3-hide-large w3-closenav w3-large">Close <i class="fa fa-remove"></i></a>
-      <!--<a href="javascript:void(0)" class="w3-dark-grey w3-btn w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">
-       Send E-mail
-        <i class="w3-padding-left fa fa-pencil"></i>
-      </a>-->
-      <div class="w3-accordion">
-        <a href="#" onclick="openPage('intro');">
-            <i class="fa w3-padding-right material-icons">person</i>
-              소개
-        </a>
-        <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)">
-            <i class="fa fa-inbox w3-padding-right"></i>
-              Project List
-            <i class="w3-padding-left fa fa-caret-down"></i>
-        </a>
-
-        <div id="Demo1" class="w3-accordion-content w3-animate-left">
-          <a href="javascript:void(0)" class="w3-border-bottom test w3-hover-light-grey" onclick="openPage('food');w3_close();" id="secondTab">
-            <div class="w3-container">
-              <img class="w3-round w3-margin-right" src="images/food_main.jpg" style="width:15%;">
-                <span class="w3-opacity w3-large">food</span>
-              <h6>회사 근처 밥집 리스트</h6>
-              <p>새로운 밥집을 등록 하고 별점, 댓글을 달아보세요.</p>
-            </div>
-          </a>
-
-        </div><!--//Demo1 -->
-      </div>
-      <!--<a href="javascript:void(0)"><i class="fa fa-paper-plane w3-padding-right"></i>Sent</a>
-      <a href="javascript:void(0)"><i class="fa fa-hourglass-end w3-padding-right"></i>Drafts</a>
-      <a href="javascript:void(0)"><i class="fa fa-trash w3-padding-right"></i>Trash</a>-->
-    </nav>
-    <!-- <div>테스트</div>
-    Modal that pops up when you click on "New Message"
-    <div id="id01" class="w3-modal" style="z-index:4">
-      <div class="w3-modal-content w3-animate-zoom">
-        <div class="w3-container w3-padding w3-red">
-           <span onclick="document.getElementById('id01').style.display='none'" class="w3-right w3-xxlarge w3-closebtn"><i class="fa fa-remove"></i></span>
-          <h2>Send Mail</h2>
-        </div>
-        <div class="w3-panel">
+      <div w3-include-html="html/nav.html"></div>
+        <!-- <div class="w3-panel">
           <label>To</label>
           <input class="w3-input w3-border w3-hover-shadow w3-margin-bottom" type="text">
           <label>From</label>
@@ -153,9 +118,9 @@
             <a class="w3-btn w3-red" onclick="document.getElementById('id01').style.display='none'">Cancel  <i class="fa fa-remove"></i></a>
             <a class="w3-btn w3-right w3-light-grey" onclick="document.getElementById('id01').style.display='none'">Send  <i class="fa fa-paper-plane"></i></a>
           </div>
-        </div>
+        </div> -->
       </div>
-    </div>-->
+    </div>
 
     <!-- Overlay effect when opening the side navigation on small screens -->
     <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
@@ -171,7 +136,9 @@
 
     </div>
 
-
+  <script>
+    w3IncludeHTML();
+  </script>
   </body>
 
 </html>
